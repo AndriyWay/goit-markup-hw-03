@@ -13,6 +13,7 @@ body {
     color: var(--slate-color);
     background-color: var(--white-color);
     letter-spacing: 0.02em;
+    min-width: 1158px;
 }
 
 .container {
