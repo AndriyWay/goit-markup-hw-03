@@ -54,13 +54,25 @@ img {
     padding-bottom: 120px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* -----HEADRE------------------------------------------------------------------------------------------------------------------ */
 
 .header {
-    display: flex;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #F4F4FD;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-flex {
@@ -156,11 +168,11 @@ img {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
 }
 
 .hero-title {
+    margin: auto;
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -200,12 +212,9 @@ img {
 /* -----FEATURE------------------------------------------------------------------------------------------------------------------------------- */
 
 .feature {
-    background-color: -60px;
 }
 
 .feature-title {
-    margin-bottom: 8px;
-    visibility: hidden;
 }
 
 .hero-list {
@@ -242,7 +251,7 @@ img {
 
 
 .presentation {
-    margin-top: -60px;
+    padding-top: 0;
 }
 
 .presentation-title {
@@ -307,6 +316,8 @@ img {
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-img {
@@ -418,6 +429,7 @@ img {
 }
 
 .project-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;   
@@ -439,8 +451,6 @@ img {
 }
 
 .footer-flex {
-    display: flex;
-    flex-direction: column;
 }
 
 .footer-logo {
